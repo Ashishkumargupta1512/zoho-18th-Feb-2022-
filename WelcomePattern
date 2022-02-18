@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class WelcomePattern
+{
+    public static void main(String args[])
+    {
+        String x ;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        x= sc.next();
+        int i,j,k;
+        int l = x.length();
+        for(i = 0;i<= l;i++)
+        {
+            for(j =l-1; j>i;j--){
+			System.out.print(" ");
+			}
+			for(k=1;k<=i+1;k++)
+			{
+             System.out.print (x.charAt(l-k)+"");
+			}
+            System.out.println ();
+        }
+    }
+}
